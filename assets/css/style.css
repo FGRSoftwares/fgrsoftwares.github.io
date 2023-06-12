@@ -31,7 +31,34 @@ h5,
 h6 {
   font-family: "Jost", sans-serif;
 }
+ .botao-arredondado {
+            background-color: #47b2e4; /* cor de fundo do botão */
+            border: none;
+            color: white; /* cor do texto */
+            padding: 15px 32px; /* espaçamento interno do botão */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 30px; /* raio do arredondamento do botão */	
+}
+.botao-arredondado i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
 
+.botao-arredondado:hover {
+  background: #42A2CF ;
+  color: #fff;
+}
+
+.botao-arredondado {
+  visibility: visible;
+  opacity: 1;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -134,10 +161,13 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-	transition: all 0.5s;
-	z-index: 997;
-	padding: 10px 0;
-  background: rgba(40, 58, 90, 0.9);
+    transition: all 0.5s;
+    z-index: 997;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    background: rgba(40, 58, 90, 0.9);
 }
 
 #header.header-scrolled,
@@ -146,7 +176,7 @@ h6 {
 }
 
 #header .logo {
-  font-size: 30px;
+  font-size: 50px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -160,7 +190,7 @@ h6 {
 }
 
 #header .logo img {
-	max-height: 140px;
+	max-height: 1140px;
 }
 
 /*--------------------------------------------------------------
@@ -191,7 +221,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
@@ -417,7 +447,8 @@ h6 {
 }
 
 #hero .container {
-  padding-top: 72px;
+    padding-top: 72px;
+    padding-left: 0px;
 }
 
 #hero h1 {
@@ -436,8 +467,8 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 50px;
+  font-size: 26px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
@@ -1311,6 +1342,7 @@ section {
 }
 
 .pricing .buy-btn {
+  background:#F80004; 
   display: inline-block;
   padding: 12px 35px;
   border-radius: 50px;
